@@ -1,16 +1,22 @@
-.button {
+/*
+button {
+    width: 132px;
+    height: 30px;
 }
 
-.disabled {
+disabled {
+
 }
 
-.secondary {
+secondary {
 }
 
-.default {
+default {
+    background-color: #0066CC;
 }
 
 .red {
+    background-color: #CC1439;
 }
 
 .default:hover {
@@ -33,4 +39,74 @@
 }
 
 .button:disabled {
+}
+*/
+
+
+/* Общие стили кнопки */
+.button {
+    width: 132px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    color: #777777;
+}
+
+.default {
+    background-color: #0066cc;
+    color: white;
+}
+
+.default:hover {
+    background-color: #005bb5;
+}
+
+.default:active {
+    background-color: #004a94;
+    transform: scale(0.98);
+}
+
+.red {
+    background-color: #cc1439;
+    color: white;
+}
+
+.red:hover {
+    background-color: #b01232;
+}
+
+.red:active {
+    background-color: #8f0e29;
+    transform: scale(0.98);
+}
+
+.secondary {
+    background-color: #f5f5f5;
+    color: #333333;
+    border: 1px solid #cccccc;
+}
+
+.secondary:hover {
+    background-color: #e6e6e6;
+}
+
+.secondary:active {
+    background-color: #cccccc;
+    transform: scale(0.98);
+}
+
+
+.button:disabled {
+    background-color: #cccccc;
+    color: #777777;
+    cursor: not-allowed;
 }
