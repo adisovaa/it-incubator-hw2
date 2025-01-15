@@ -1,8 +1,13 @@
 .App {
     --header_height: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.appContainer {
     width: 90%;
     margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hw {

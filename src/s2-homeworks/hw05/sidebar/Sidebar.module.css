@@ -1,25 +1,68 @@
+/* Sidebar */
 .sidebar {
+    width: 317px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -317px; /* Изначально скрыто за экраном */
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease; /* Плавное открытие */
+    z-index: 1000;
 }
 
 .sidebar.open {
+    left: 0; /* Когда открыто */
 }
 
+/* Фон затемнения */
 .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Под слоем Sidebar */
 }
 
+/* Навигация */
 .nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .nav a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 30px 0 30px 50px;
+    color: #333;
+    transition: color 0.3s;
 }
 
 .nav a:hover {
+    color: #0066cc;
 }
 
 .nav a.active {
+    font-weight: bold;
+    color: #0066cc;
 }
+
+/* Кнопка закрытия */
 .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
 .close img {
+    width: 24px;
+    height: 24px;
 }
