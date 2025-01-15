@@ -25,17 +25,16 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
     return (
         <>
             <div id={'hw5-header'} className={s.header}>
-                <div className={a.appContainer}>
-                    <img
-                        src={burgerIcon}
-                        id={'hw5-burger-menu'}
-                        className={s.burgerMenuIcon}
-                        onClick={handleOpen}
-                        alt={'open menu'}
-                    />
-                    <h1>{pageName}</h1>
-                </div>
+                <img
+                    src={burgerIcon}
+                    id={'hw5-burger-menu'}
+                    className={s.burgerMenuIcon}
+                    onClick={handleOpen}
+                    alt={'open menu'}
+                />
+                <h1>{pageName}</h1>
             </div>
+
         </>
     )
 }
