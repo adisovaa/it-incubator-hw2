@@ -10,6 +10,7 @@
 
 .hw {
     margin: 20px 0;
+    height: 21vw;
 }
 
 
@@ -22,7 +23,7 @@
     padding: 60px 0 10px;
 }
 
-.hwFlex{
+.hwFlex {
     display: flex;
     flex-direction: column;
 }
