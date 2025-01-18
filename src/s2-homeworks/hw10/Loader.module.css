@@ -1,3 +1,14 @@
 .loader {
-    /*свг и/или анимация*/
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(farthest-side, #220e50 94%, #0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%, #32285d);
+    animation: l13 1s infinite linear;
+}
+
+@keyframes l13 {
+    100% {
+        transform: rotate(1turn);
+    }
 }
