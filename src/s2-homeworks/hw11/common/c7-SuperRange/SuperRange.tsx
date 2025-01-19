@@ -1,13 +1,23 @@
 import React from 'react'
-import {Slider, SliderProps} from '@mui/material'
+import { Slider, SliderProps } from '@mui/material'
 
 const SuperRange: React.FC<SliderProps> = (props) => {
     return (
         <Slider
-            sx={{ // стили для слайдера // пишет студент
-                
+            sx={{
+                color: '#00CC22',
+                height: 8,
+                '& .MuiSlider-rail': {
+                    backgroundColor: '#d3d3d3',
+                    opacity: 0.5,
+                },
+                '& .MuiSlider-thumb': {
+                    backgroundColor: '#00CC22',
+                    width: 20,
+                    height: 20,
+                },
             }}
-            {...props} // отдаём слайдеру пропсы если они есть (value например там внутри)
+            {...props} // передаем все пропсы, включая value и onChange
         />
     )
 }

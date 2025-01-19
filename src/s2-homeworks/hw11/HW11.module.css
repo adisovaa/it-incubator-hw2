@@ -1,8 +1,18 @@
 .container {
+    margin-top: 50px;
+    font-weight: 600;
 }
 
 .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 12px 10px;
 }
 
 .number {
+    margin: 1px 20px;
+}
+
+.range{
+    width: 147px!important;
 }
